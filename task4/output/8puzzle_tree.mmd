@@ -1,0 +1,80 @@
+graph TD
+    n0["1 2 3<br/>_ 4 6<br/>7 5 8"]
+    class n0 path
+    n0 -->|"Right"| n3
+    n0 -->|"Down"| n2
+    n0 -->|"Up"| n1
+    n1["_ 2 3<br/>1 4 6<br/>7 5 8"]
+    n1 -->|"Right"| n5
+    n1 -->|"Down"| n4
+    n4["1 2 3<br/>_ 4 6<br/>7 5 8<br/>↺ e perseritur"]
+    class n4 repeated
+    n5["2 _ 3<br/>1 4 6<br/>7 5 8"]
+    n5 -->|"Right"| n14
+    n5 -->|"Left"| n13
+    n5 -->|"Down"| n12
+    n12["2 4 3<br/>1 _ 6<br/>7 5 8"]
+    class n12 limit
+    n13["_ 2 3<br/>1 4 6<br/>7 5 8<br/>↺ e perseritur"]
+    class n13 repeated
+    n14["2 3 _<br/>1 4 6<br/>7 5 8"]
+    class n14 limit
+    n2["1 2 3<br/>7 4 6<br/>_ 5 8"]
+    n2 -->|"Right"| n7
+    n2 -->|"Up"| n6
+    n6["1 2 3<br/>_ 4 6<br/>7 5 8<br/>↺ e perseritur"]
+    class n6 repeated
+    n7["1 2 3<br/>7 4 6<br/>5 _ 8"]
+    n7 -->|"Right"| n17
+    n7 -->|"Left"| n16
+    n7 -->|"Up"| n15
+    n15["1 2 3<br/>7 _ 6<br/>5 4 8"]
+    class n15 limit
+    n16["1 2 3<br/>7 4 6<br/>_ 5 8<br/>↺ e perseritur"]
+    class n16 repeated
+    n17["1 2 3<br/>7 4 6<br/>5 8 _"]
+    class n17 limit
+    n3["1 2 3<br/>4 _ 6<br/>7 5 8"]
+    class n3 path
+    n3 -->|"Right"| n11
+    n3 -->|"Left"| n10
+    n3 -->|"Down"| n9
+    n3 -->|"Up"| n8
+    n8["1 _ 3<br/>4 2 6<br/>7 5 8"]
+    n8 -->|"Right"| n20
+    n8 -->|"Left"| n19
+    n8 -->|"Down"| n18
+    n18["1 2 3<br/>4 _ 6<br/>7 5 8<br/>↺ e perseritur"]
+    class n18 repeated
+    n19["_ 1 3<br/>4 2 6<br/>7 5 8"]
+    class n19 limit
+    n20["1 3 _<br/>4 2 6<br/>7 5 8"]
+    class n20 limit
+    n9["1 2 3<br/>4 5 6<br/>7 _ 8"]
+    class n9 path
+    n9 -->|"Right"| n23
+    n9 -->|"Left"| n22
+    n9 -->|"Up"| n21
+    n21["1 2 3<br/>4 _ 6<br/>7 5 8<br/>↺ e perseritur"]
+    class n21 repeated
+    n22["1 2 3<br/>4 5 6<br/>_ 7 8"]
+    class n22 limit
+    n23["1 2 3<br/>4 5 6<br/>7 8 _<br/>✓ QELLIMI"]
+    class n23 goal
+    n10["1 2 3<br/>_ 4 6<br/>7 5 8<br/>↺ e perseritur"]
+    class n10 repeated
+    n11["1 2 3<br/>4 6 _<br/>7 5 8"]
+    n11 -->|"Left"| n26
+    n11 -->|"Down"| n25
+    n11 -->|"Up"| n24
+    n24["1 2 _<br/>4 6 3<br/>7 5 8"]
+    class n24 limit
+    n25["1 2 3<br/>4 6 8<br/>7 5 _"]
+    class n25 limit
+    n26["1 2 3<br/>4 _ 6<br/>7 5 8<br/>↺ e perseritur"]
+    class n26 repeated
+    classDef goal fill:#2e7d32,color:#fff,stroke:#1b5e20
+    classDef path fill:#1565c0,color:#fff,stroke:#0d47a1
+    classDef repeated fill:#9e9e9e,color:#fff,stroke:#616161
+    classDef invalid fill:#c62828,color:#fff,stroke:#8e0000
+    classDef limit fill:#f9a825,color:#000,stroke:#f57f17

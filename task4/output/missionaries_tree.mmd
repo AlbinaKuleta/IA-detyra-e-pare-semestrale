@@ -1,0 +1,149 @@
+graph TD
+    n0["(3,3,1)<br/>MMMCCC B~~ -"]
+    class n0 path
+    n0 -->|"1M1C →"| n5
+    n0 -->|"0M2C →"| n4
+    n0 -->|"0M1C →"| n3
+    n0 -->|"2M0C →"| n2
+    n0 -->|"1M0C →"| n1
+    n1["(2,3,0)<br/>MMCCC ~~B M<br/>✗ majtas C > M"]
+    class n1 invalid
+    n2["(1,3,0)<br/>MCCC ~~B MM<br/>✗ majtas C > M"]
+    class n2 invalid
+    n3["(3,2,0)<br/>MMMCC ~~B C"]
+    n3 -->|"0M1C ←"| n6
+    n6["(3,3,1)<br/>MMMCCC B~~ -<br/>↺ e perseritur"]
+    class n6 repeated
+    n4["(3,1,0)<br/>MMMC ~~B CC"]
+    class n4 path
+    n4 -->|"0M2C ←"| n8
+    n4 -->|"0M1C ←"| n7
+    n7["(3,2,1)<br/>MMMCC B~~ C"]
+    class n7 path
+    n7 -->|"1M1C →"| n16
+    n7 -->|"0M2C →"| n15
+    n7 -->|"0M1C →"| n14
+    n7 -->|"2M0C →"| n13
+    n7 -->|"1M0C →"| n12
+    n12["(2,2,0)<br/>MMCC ~~B MC<br/>↺ e perseritur"]
+    class n12 repeated
+    n13["(1,2,0)<br/>MCC ~~B MMC<br/>✗ majtas C > M"]
+    class n13 invalid
+    n14["(3,1,0)<br/>MMMC ~~B CC<br/>↺ e perseritur"]
+    class n14 repeated
+    n15["(3,0,0)<br/>MMM ~~B CCC"]
+    class n15 path
+    n15 -->|"0M2C ←"| n18
+    n15 -->|"0M1C ←"| n17
+    n17["(3,1,1)<br/>MMMC B~~ CC"]
+    class n17 path
+    n17 -->|"1M1C →"| n22
+    n17 -->|"0M1C →"| n21
+    n17 -->|"2M0C →"| n20
+    n17 -->|"1M0C →"| n19
+    n19["(2,1,0)<br/>MMC ~~B MCC<br/>✗ djathtas C > M"]
+    class n19 invalid
+    n20["(1,1,0)<br/>MC ~~B MMCC"]
+    class n20 path
+    n20 -->|"1M1C ←"| n27
+    n20 -->|"0M2C ←"| n26
+    n20 -->|"0M1C ←"| n25
+    n20 -->|"2M0C ←"| n24
+    n20 -->|"1M0C ←"| n23
+    n23["(2,1,1)<br/>MMC B~~ MCC<br/>✗ djathtas C > M"]
+    class n23 invalid
+    n24["(3,1,1)<br/>MMMC B~~ CC<br/>↺ e perseritur"]
+    class n24 repeated
+    n25["(1,2,1)<br/>MCC B~~ MMC<br/>✗ majtas C > M"]
+    class n25 invalid
+    n26["(1,3,1)<br/>MCCC B~~ MM<br/>✗ majtas C > M"]
+    class n26 invalid
+    n27["(2,2,1)<br/>MMCC B~~ MC"]
+    class n27 path
+    n27 -->|"1M1C →"| n32
+    n27 -->|"0M2C →"| n31
+    n27 -->|"0M1C →"| n30
+    n27 -->|"2M0C →"| n29
+    n27 -->|"1M0C →"| n28
+    n28["(1,2,0)<br/>MCC ~~B MMC<br/>✗ majtas C > M"]
+    class n28 invalid
+    n29["(0,2,0)<br/>CC ~~B MMMC"]
+    class n29 path
+    n29 -->|"1M1C ←"| n36
+    n29 -->|"0M1C ←"| n35
+    n29 -->|"2M0C ←"| n34
+    n29 -->|"1M0C ←"| n33
+    n33["(1,2,1)<br/>MCC B~~ MMC<br/>✗ majtas C > M"]
+    class n33 invalid
+    n34["(2,2,1)<br/>MMCC B~~ MC<br/>↺ e perseritur"]
+    class n34 repeated
+    n35["(0,3,1)<br/>CCC B~~ MMM"]
+    class n35 path
+    n35 -->|"0M2C →"| n38
+    n35 -->|"0M1C →"| n37
+    n37["(0,2,0)<br/>CC ~~B MMMC<br/>↺ e perseritur"]
+    class n37 repeated
+    n38["(0,1,0)<br/>C ~~B MMMCC"]
+    class n38 path
+    n38 -->|"1M1C ←"| n43
+    n38 -->|"0M2C ←"| n42
+    n38 -->|"0M1C ←"| n41
+    n38 -->|"2M0C ←"| n40
+    n38 -->|"1M0C ←"| n39
+    n39["(1,1,1)<br/>MC B~~ MMCC"]
+    class n39 path
+    n39 -->|"1M1C →"| n46
+    n39 -->|"0M1C →"| n45
+    n39 -->|"1M0C →"| n44
+    n44["(0,1,0)<br/>C ~~B MMMCC<br/>↺ e perseritur"]
+    class n44 repeated
+    n45["(1,0,0)<br/>M ~~B MMCCC<br/>✗ djathtas C > M"]
+    class n45 invalid
+    n46["(0,0,0)<br/>- ~~B MMMCCC<br/>✓ QELLIMI"]
+    class n46 goal
+    n40["(2,1,1)<br/>MMC B~~ MCC<br/>✗ djathtas C > M"]
+    class n40 invalid
+    n41["(0,2,1)<br/>CC B~~ MMMC"]
+    n41 -->|"0M2C →"| n48
+    n41 -->|"0M1C →"| n47
+    n47["(0,1,0)<br/>C ~~B MMMCC<br/>↺ e perseritur"]
+    class n47 repeated
+    n48["(0,0,0)<br/>- ~~B MMMCCC<br/>↺ e perseritur"]
+    class n48 repeated
+    n42["(0,3,1)<br/>CCC B~~ MMM<br/>↺ e perseritur"]
+    class n42 repeated
+    n43["(1,2,1)<br/>MCC B~~ MMC<br/>✗ majtas C > M"]
+    class n43 invalid
+    n36["(1,3,1)<br/>MCCC B~~ MM<br/>✗ majtas C > M"]
+    class n36 invalid
+    n30["(2,1,0)<br/>MMC ~~B MCC<br/>✗ djathtas C > M"]
+    class n30 invalid
+    n31["(2,0,0)<br/>MM ~~B MCCC<br/>✗ djathtas C > M"]
+    class n31 invalid
+    n32["(1,1,0)<br/>MC ~~B MMCC<br/>↺ e perseritur"]
+    class n32 repeated
+    n21["(3,0,0)<br/>MMM ~~B CCC<br/>↺ e perseritur"]
+    class n21 repeated
+    n22["(2,0,0)<br/>MM ~~B MCCC<br/>✗ djathtas C > M"]
+    class n22 invalid
+    n18["(3,2,1)<br/>MMMCC B~~ C<br/>↺ e perseritur"]
+    class n18 repeated
+    n16["(2,1,0)<br/>MMC ~~B MCC<br/>✗ djathtas C > M"]
+    class n16 invalid
+    n8["(3,3,1)<br/>MMMCCC B~~ -<br/>↺ e perseritur"]
+    class n8 repeated
+    n5["(2,2,0)<br/>MMCC ~~B MC"]
+    n5 -->|"1M1C ←"| n11
+    n5 -->|"0M1C ←"| n10
+    n5 -->|"1M0C ←"| n9
+    n9["(3,2,1)<br/>MMMCC B~~ C<br/>↺ e perseritur"]
+    class n9 repeated
+    n10["(2,3,1)<br/>MMCCC B~~ M<br/>✗ majtas C > M"]
+    class n10 invalid
+    n11["(3,3,1)<br/>MMMCCC B~~ -<br/>↺ e perseritur"]
+    class n11 repeated
+    classDef goal fill:#2e7d32,color:#fff,stroke:#1b5e20
+    classDef path fill:#1565c0,color:#fff,stroke:#0d47a1
+    classDef repeated fill:#9e9e9e,color:#fff,stroke:#616161
+    classDef invalid fill:#c62828,color:#fff,stroke:#8e0000
+    classDef limit fill:#f9a825,color:#000,stroke:#f57f17

@@ -1,0 +1,21 @@
+(bosh)   [*]
+├── D -> D   [*]
+│   ├── D -> DD   [*, LIMIT]
+│   ├── A -> DA   [LIMIT]
+│   ├── N -> DN   [LIMIT]
+│   └── - -> D-   [LIMIT]
+├── A -> A
+│   ├── D -> AD   [INVALID: A→D e ndaluar]
+│   ├── A -> AA   [LIMIT]
+│   ├── N -> AN   [LIMIT]
+│   └── - -> A-   [LIMIT]
+├── N -> N
+│   ├── D -> ND   [INVALID: N→D e ndaluar]
+│   ├── A -> NA   [INVALID: N→A e ndaluar]
+│   ├── N -> NN   [LIMIT]
+│   └── - -> N-   [LIMIT]
+└── - -> -
+    ├── D -> -D   [LIMIT]
+    ├── A -> -A   [LIMIT]
+    ├── N -> -N   [LIMIT]
+    └── - -> --   [LIMIT]
